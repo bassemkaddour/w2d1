@@ -29,6 +29,5 @@ var requestOptions = {
 };
 
 module.exports = {
-  getHTML,
-  printHTML
+  getHTML
 };
