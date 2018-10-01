@@ -15,11 +15,15 @@ function getAndPrintHTML () {
 
     response.on('data', function (data) {
       outputString += data;
-
-    respone.on('end', function () {
-      console.log(data);
     });
-    })
+
+
+    response.on('end', function () {
+      console.log(outputString);
+    });
+
   });
 
 }
+
+getAndPrintHTML();
